@@ -2,12 +2,14 @@
 	<head>
 		<title>Angular Intro</title>
 	</head>
-	<body ng-controller="myController">
+	<body>
 		
-		<h1>Hello: {{greeting}}</h1>
-		<input type="text" ng-model="greeting">
-		
-		<button type="submit" ng-click="generateGreeting()">Click me!</button>
+		<div ng-controller="myController">
+			<h1>Hello: {{greeting}}</h1>
+			<input type="text" ng-model="greeting">
+			
+			<button type="submit" ng-click="generateGreeting()">Click me!</button>
+		</div>
 
 		<!-- Loading in Angular 1.5 -->
 		<script type="text/javascript" src="js/angular.js"></script>
