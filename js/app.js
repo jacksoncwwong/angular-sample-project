@@ -12,6 +12,14 @@ var myController = function($scope){
 
 	$scope.greeting = "Dana!!";
 
+// so here what we're doing is writing a function that will give us randomly one of these names
+	var names = ["John", "James", "Mary"];
+	$scope.generateGreeting = function(){
+
+		var randomName = parseInt(Math.random() * names.length);
+		$scope.greeting = names[randomName];
+
+	}
 }
 
 // after writing our controller here, we have to tell Angular
